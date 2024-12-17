@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <span style="font-size: 24px; font-weight: bold; letter-spacing: 1px;">
+    Catálogo Productos
+  </span>
+
+  <span class="example-spacer"></span>
+
+</mat-toolbar>
+
+<div class="row">
+  @for (product of products; track $index) {
+  <div product-card [product]="product" class="col-4 my-2" (productEventEmitter)="onAddCart($event)"></div>
+  }
+</div>
+
+<div class="row">
+  @for (product of productsApi; track $index) {
+  <div product-card [product]="product" class="col-4 my-2" (productEventEmitter)="onAddCart($event)"></div>
+  }
+</div>

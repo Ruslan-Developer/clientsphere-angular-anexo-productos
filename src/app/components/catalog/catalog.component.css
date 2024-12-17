@@ -1,0 +1,16 @@
+mat-toolbar {
+    background-color: #2ab41d; /* Color principal de la toolbar */
+    color: white;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  mat-icon {
+    font-size: 20px;
+  }
+  
+  button {
+    color: white;
+  }
